@@ -2,13 +2,28 @@
   margin-top: 6px;
   float: right;
 }
-.section-name{
-  margin-top: 5px;
+.row-border{
+    margin-top: 5px;
   border:solid 1px #000;
   border-radius: 5px;
-  background: linear-gradient(141deg, aqua 0%, #1fc8db 51%, #2cb5e8 75%);
   box-shadow: 1px 1px 10px #000;
 }
+
+.row-border .lead{
+  margin-bottom: 0px;
+  padding: 8px 0;
+}
+.section-name{
+
+  background: linear-gradient(141deg, aqua 0%, #1fc8db 51%, #2cb5e8 75%);
+
+}
 .section-name h3{
+  margin-top: 10px;
+}
+.section-personal-date{
+  margin-top: 10px;
+}
+.section-personal-skills{
   margin-top: 10px;
 }
