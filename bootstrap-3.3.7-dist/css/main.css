@@ -36,3 +36,14 @@
   border: solid 1px #000;
 
 }
+dt{
+  text-align: left !important;
+  width: 80px !important;
+}
+dd{
+  text-align: left !important;
+}
+.dl-list{
+margin-top: 20px;
+
+}
