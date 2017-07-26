@@ -27,3 +27,12 @@
 .section-personal-skills{
   margin-top: 10px;
 }
+
+.my-photo{
+  position: absolute;
+  bottom: -148px;
+  width: 130px;
+  height: 160px;
+  border: solid 1px #000;
+
+}
