@@ -1,5 +1,6 @@
 body{
   background-color: #87B7E8;
+  color: black;
 }
 .navig{
   margin-top: 10px;
@@ -33,15 +34,17 @@ color: white;
 .section-personal-skills{
   margin-top: 10px;
 }
-
+@media screen and (min-width: 1000px) {
 .my-photo{
+
   background-image: url('aaa.jpg');
   position: absolute;
-  bottom: -148px;
+  bottom: -134px;
   width: 130px;
   height: 160px;
   border: solid 1px #000;
 
+}
 }
 .my-photo:hover >img{
   content: url('aaa.jpg');
@@ -57,4 +60,24 @@ dd{
 .dl-list{
 margin-top: 20px;
 
+}
+.col{
+  background-color: grey !important;
+}
+a{
+  color: black;
+}
+a:hover{
+  color: black;
+}
+.red{
+  color: red;
+}
+.grad {
+    background: #203f72; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#203f72, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#203f72, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#203f72, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#203f72, black); /* Standard syntax */
+    color: white;
 }
