@@ -4,6 +4,7 @@ body{
 }
 .navig{
   margin-top: 10px;
+  font-size: 17px;
 }
 .btn-download{
   margin-top: 6px;
@@ -80,4 +81,7 @@ a:hover{
     background: -moz-linear-gradient(#203f72, black); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#203f72, black); /* Standard syntax */
     color: white;
+}
+.italic{
+  font-style: italic;
 }

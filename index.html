@@ -38,21 +38,21 @@
 <div class="row navig">
   <div class="col-md-2">
 <ul>
-  <li>Adres:</li>
-  <li>Data urodzenia:</li>
-  <li>Numer telefonu:</li>
-  <li>Adres e-mail:</li>
-  <li>GitHub</li>
+  <li class="italic">Adres:</li>
+  <li class="italic">Data urodzenia:</li>
+  <li class="italic">Numer telefonu:</li>
+  <li class="italic">Adres e-mail:</li>
+  <li class="italic">GitHub</li>
 
 </ul>
   </div>
   <div class="col-md-5">
     <ul>
-      <li>Warszawa</li>
-      <li>21.09.1995</li>
-      <li>531678882</li>
-      <li>crimson.kuba@gmail.com</li>
-      <li><a href="https://github.com/JakubDabrowskiGIT" target="_blank">Link GitHub</a></li>
+      <li><strong>Warszawa</strong></li>
+      <li><strong>21.09.1995</strong></li>
+      <li><strong>531678882</strong></li>
+      <li><strong>crimson.kuba@gmail.com</strong></li>
+      <li><strong><a href="https://github.com/JakubDabrowskiGIT" target="_blank">Link GitHub</a></strong></li>
 
     </ul>
   </div>
@@ -90,16 +90,35 @@ function normalImg(x) {
 
 </div>
 
-<div class="row">
-  <div class="col-md-12">
-    <ul style="list-style: square">
-<li></li>
-<li></li>
-    </ul>
+
+
+
+
+
+<div id="more" style="display:none;">
+  <div class="row">
+    <div class="col-md-12">
+      <ul style="list-style: square listHidden">
+  <li></li>
+  <li></li>
+      </ul>
+
+    </div>
 
   </div>
-
 </div>
+<a href="javascript:showMore()" id="link"> Wysuń</a>`
+
+<script>
+function showMore(){
+    //removes the link
+    // document.getElementById('link').parentElement.removeChild('link');
+    //shows the #more
+    document.getElementById('more').style.display = "block";
+}
+</script>
+
+
 
 
 
@@ -145,7 +164,7 @@ function normalImg(x) {
       </div>
     </div>
 
-<div class="row row-border section-personal-skills">
+<div class="row row-border section-personal-skills grad">
   <div class="col-md-12">
 
 
@@ -172,7 +191,7 @@ function normalImg(x) {
 
 </div>
 
-<div class="row row-border section-personal-skills">
+<div class="row row-border section-personal-skills grad">
   <div class="col-md-6">
 
 <p class="lead"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Atrybuty</p>
