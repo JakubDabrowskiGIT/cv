@@ -21,7 +21,7 @@
   <h3 class="text-uppercase"> Jakub Dąbrowski</h3>
 </div>
   <div class="col-md-4">
-    <a class="btn btn-danger btn-download" href="#">Download</a>
+    <a class="btn btn-danger btn-download" href="#">Download PDF</a>
   </div>
 </div>
 <div class="row row-border section-personal-date">
@@ -35,7 +35,7 @@
 
 
 
-<div class="row">
+<div class="row navig">
   <div class="col-md-2">
 <ul>
   <li>Adres:</li>
@@ -43,21 +43,39 @@
   <li>Numer telefonu:</li>
   <li>Adres e-mail:</li>
   <li>GitHub</li>
-  <li>Strona:</li>
+
 </ul>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-5">
     <ul>
       <li>Warszawa</li>
       <li>21.09.1995</li>
       <li>531678882</li>
       <li>crimson.kuba@gmail.com</li>
-      <li></li>
-      <li></li>
+      <li><a href="https://github.com/JakubDabrowskiGIT" target="_blank">Jakub Dąbrowski GitHub</a></li>
+
     </ul>
   </div>
+  <div class="col-md-1">
+    <p>Najedź myszką, żeby powiększyć</p>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+  </div>
   <div class="col-md-4">
-<img src="..." alt="myPhoto" class="img-thumbnail my-photo">
+<img src="moje.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" alt="my-photo" class="img-thumbnail my-photo myPhoto"/>
+<script>
+function bigImg(x) {
+
+    x.style.height = "246px";
+    x.style.width = "200px";
+}
+
+function normalImg(x) {
+    x.style.height = "160px";
+    x.style.width = "130px";
+}
+</script>
   </div>
 </div>
 
@@ -101,7 +119,7 @@
 <div class="row">
   <div class="col-md-12">
     <dl class="dl-horizontal dl-list">
-      <dt><a href="#">Łacina</a></dt>
+      <dt><a href="#">Łacina loremm asdasdd</a></dt>
       <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
     </dl>
   </div>
@@ -122,7 +140,7 @@
         <dl class="dl-horizontal">
           <dt>AkademiaKodu <br>Lipiec 2017</dt>
           <dd>Kurs Java, HTML, Spring itd</dd>
-          
+
         </dl>
       </div>
     </div>

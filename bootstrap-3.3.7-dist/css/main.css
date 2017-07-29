@@ -1,3 +1,9 @@
+body{
+  background-color: #87B7E8;
+}
+.navig{
+  margin-top: 10px;
+}
 .btn-download{
   margin-top: 6px;
   float: right;
@@ -14,8 +20,8 @@
   padding: 8px 0;
 }
 .section-name{
-
-  background: linear-gradient(141deg, aqua 0%, #1fc8db 51%, #2cb5e8 75%);
+color: white;
+  background: linear-gradient(141deg, black 20%, #1fc8db 51%, #373296 80%);
 
 }
 .section-name h3{
@@ -29,6 +35,7 @@
 }
 
 .my-photo{
+  background-image: url('aaa.jpg');
   position: absolute;
   bottom: -148px;
   width: 130px;
@@ -36,12 +43,16 @@
   border: solid 1px #000;
 
 }
+.my-photo:hover >img{
+  content: url('aaa.jpg');
+  background: url('aaa.jpg');
+}
 dt{
-  text-align: left !important;
-  width: 80px !important;
+  text-align: left;
+
 }
 dd{
-  text-align: left !important;
+  text-align: left;
 }
 .dl-list{
 margin-top: 20px;
