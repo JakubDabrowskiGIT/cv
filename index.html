@@ -8,6 +8,7 @@
 <meta name="keywords" content="hiper strona">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="x-ua-compatible" content="IE=edge">
+
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
 
@@ -82,39 +83,50 @@ function normalImg(x) {
 
 
 <div class="row row-border section-personal-skills grad">
-  <div class="col-md-12">
-
-
-<p class="lead"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> Umiejętności</p>
+    <div class="col-md-12">
+    <p class="lead"><span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span> Umiejętności    <a  href="javascript:showMore()" class="white" id="link"> Wysuń</a><a  href="javascript:showLess()" class="display white" id="link2"> Wsuń</a></p>
+    </div>
 </div>
-
-</div>
-
-
-
-
-
 
 <div id="more" style="display:none;">
-  <div class="row">
-    <div class="col-md-12">
-      <ul style="list-style: square listHidden">
-  <li></li>
-  <li></li>
-      </ul>
-
-    </div>
-
+    <div class="row navig">
+        <div class="col-md-12">
+            <ul style="list-style: square listHidden">
+                <li>Szybkiego uczenia</li>
+                <li>Elastyczność</li>
+                <li>Kierowania zespołem</li>
+                <li>Odporność na stres</li>
+                <li>Samodyscyplina</li>
+                <li>Kreatywność</li>
+                <li>Myślenie analityczne</li>
+                <li>Dopinanie wszsytkiego na ostatni guzik </li>
+                <li>Dokładność</li>
+                <li>Chęć nauki</li>
+            </ul>
+        </div>
   </div>
 </div>
-<a href="javascript:showMore()" id="link"> Wysuń</a>`
 
 <script>
 function showMore(){
     //removes the link
-    // document.getElementById('link').parentElement.removeChild('link');
+    var elem = document.getElementById('link');
+    elem.style.display = "none";
     //shows the #more
     document.getElementById('more').style.display = "block";
+
+    var show = document.getElementById('link2');
+    show.style.display = "block";
+}
+
+function showLess(){
+    var elem2 = document.getElementById('link2');
+    elem2.style.display = "none";
+
+    document.getElementById('more').style.display = "none";
+
+    var show2 = document.getElementById('link');
+    show2.style.display = "block";
 }
 </script>
 
@@ -135,22 +147,22 @@ function showMore(){
 
 </div>
 
-<div class="row">
-  <div class="col-md-12">
-    <dl class="dl-horizontal dl-list">
-      <dt><a href="#">Łacina loremm asdasdd</a></dt>
+<div class="row navig">
+    <div class="col-md-12">
+      <dl class="dl-horizontal dl-list">
+      <dt>słowko klucz</dt>
       <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-    </dl>
-  </div>
+      </dl>
+
+
+</div>
 </div>
 
 <div class="row row-border section-personal-skills grad">
   <div class="col-md-12">
 
-
 <p class="lead"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Kursy</p>
 </div>
-
 </div>
 
 

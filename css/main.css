@@ -38,7 +38,6 @@ color: white;
 @media screen and (min-width: 1000px) {
 .my-photo{
 
-  background-image: url('aaa.jpg');
   position: absolute;
   bottom: -134px;
   width: 130px;
@@ -84,4 +83,10 @@ a:hover{
 }
 .italic{
   font-style: italic;
+}
+.display{
+  display: none;
+}
+.white{
+  color: white;
 }
