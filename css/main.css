@@ -92,7 +92,7 @@ a:hover{
   color: white;
 }
 .white:hover{
-  color: white;
+  color: white !important;
 }
 .author{
   font-weight: bold;
