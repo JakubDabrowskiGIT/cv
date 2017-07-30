@@ -39,7 +39,7 @@ color: white;
 .my-photo{
 
   position: absolute;
-  bottom: -134px;
+  bottom: -144px;
   width: 130px;
   height: 160px;
   border: solid 1px #000;
@@ -70,6 +70,7 @@ a{
 a:hover{
   color: black;
 }
+
 .red{
   color: red;
 }
@@ -89,4 +90,15 @@ a:hover{
 }
 .white{
   color: white;
+}
+.white:hover{
+  color: white;
+}
+.author{
+  font-weight: bold;
+
+
+}
+.langu{
+  text-align: right;
 }

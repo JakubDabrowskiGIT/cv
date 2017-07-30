@@ -16,6 +16,11 @@
 <body>
 
 <div class="container">
+
+
+
+
+
   <div class="row row-border section-name col">
 <div class="col-md-8">
 
@@ -88,7 +93,9 @@ function normalImg(x) {
   </div>
 
     <div class="col-md-11">
-    <p class="lead"><a  href="javascript:showMore()" class="white" id="link">Umiejętności Wysuń</a><a href="javascript:showLess()" class="display white" id="link2">Umiejętności Wsuń</a></p>
+    <p class="lead">
+      <a href="javascript:showMore()" class="white" id="link">Umiejętności <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLess()" class="display white" id="link2">Umiejętności <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
     </div>
 
 </div>
@@ -96,21 +103,23 @@ function normalImg(x) {
 <div id="more" style="display:none;">
     <div class="row navig">
         <div class="col-md-12">
-            <ul style="list-style: square listHidden">
-                <li>Szybkiego uczenia</li>
-                <li>Elastyczność</li>
-                <li>Kierowania zespołem</li>
-                <li>Odporność na stres</li>
-                <li>Samodyscyplina</li>
-                <li>Kreatywność</li>
-                <li>Myślenie analityczne</li>
-                <li>Dopinanie wszystkiego na ostatni guzik </li>
-                <li>Dokładność</li>
-                <li>Chęć nauki</li>
-            </ul>
+          <ul style="list-style: square listHidden">
+                          <li>Szybkiego uczenia</li>
+                          <li>Elastyczność</li>
+                          <li>Pisanie kodu z zastosowaniem <q cite="">Dobrych praktyk</q></li>
+                          <li>Kierowania zespołem</li>
+                          <li>Odporność na stres</li>
+                          <li>Samodyscyplina</li>
+                          <li>Kreatywność</li>
+                          <li>Myślenie analityczne</li>
+                          <li>Dopinanie wszystkiego na ostatni guzik </li>
+                          <li>Dokładność</li>
+                          <li>Chęć nauki</li>
+                      </ul>
         </div>
   </div>
 </div>
+
 
 <script>
 function showMore(){
@@ -137,89 +146,397 @@ function showLess(){
 
 
 
-
-
-
-
-
+<!-- Projekty -->
 
 <div class="row row-border section-personal-skills grad">
-  <div class="col-md-12">
+  <div class="col-md-1">
+  <p class="lead"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></p>
+  </div>
 
-
-<p class="lead"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Projekty</p>
-</div>
-
-</div>
-
-<div class="row navig">
-    <div class="col-md-12">
-      <dl class="dl-horizontal dl-list">
-      <dt>słowko klucz</dt>
-      <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</dd>
-      </dl>
-
-
-</div>
-</div>
-
-<div class="row row-border section-personal-skills grad">
-  <div class="col-md-12">
-
-<p class="lead"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Kursy</p>
-</div>
-</div>
-
-
-<div class="row">
-      <div class="col-md-12">
-        <dl class="dl-horizontal">
-          <dt>AkademiaKodu <br>Lipiec 2017</dt>
-          <dd>Kurs Java, HTML, Spring itd</dd>
-
-        </dl>
-      </div>
+    <div class="col-md-11">
+    <p class="lead">
+      <a href="javascript:showMore1()" class="white" id="link3">Projekty <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLess2()" class="display white" id="link4">Projekty <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
     </div>
 
+</div>
+
+<div id="more1" style="display:none;">
+    <div class="row navig">
+        <div class="col-md-12">
+          <dl class="dl-horizontal dl-list">
+          <dt>Kółko i krzyżyk</dt>
+          <dd> Prosta gra dla dwojga osób przy użyciu swinga, pokazująca komunikat kiedy jeden z graczy wygra </dd><br>
+          <dt>Pogodynka</dt>
+          <dd>Aplikacja do wyświetlania pogody, czyli temperatury, ciśnienia, zachmurzenia, wilgotność, z obsugą literówek przy wpisaniu nazwy miasta, obsługą polskiego języka, oraz obsługjącą każde miasto</dd>
+          </dl>
+        </div>
+  </div>
+</div>
+
+<script>
+function showMore1(){
+    //removes the link
+    var elem = document.getElementById('link3');
+    elem.style.display = "none";
+    //shows the #more
+    document.getElementById('more1').style.display = "block";
+
+    var show = document.getElementById('link4');
+    show.style.display = "block";
+}
+
+function showLess2(){
+    var elem = document.getElementById('link4');
+    elem.style.display = "none";
+
+    document.getElementById('more1').style.display = "none";
+
+    var show2 = document.getElementById('link3');
+    show2.style.display = "block";
+}
+</script>
+
+
+
+
+<!-- Kursy -->
+
+
 <div class="row row-border section-personal-skills grad">
-  <div class="col-md-12">
+  <div class="col-md-1">
+  <p class="lead"><span class="glyphicon glyphicon-book" aria-hidden="true"></p>
+  </div>
 
+    <div class="col-md-11">
+    <p class="lead">
+      <a href="javascript:showMoreK()" class="white" id="linkK3">Kursy <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLessK2()" class="display white" id="linkK4">Kursy <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+    </div>
 
-<p class="lead"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Doświadczenie</p>
 </div>
 
+<div id="more2" style="display:none;">
+    <div class="row navig">
+        <div class="col-md-12">
+          <dl class="dl-horizontal">
+            <dt>Kurs Unijny<br></dt>
+            <dd>Kurs <q>Tworzenie strony w PHP,HTML,CSS i  Wordpress</q></dd><br>
+            <dt>AkademiaKodu<br>Lipiec 2017</dt>
+            <dd>Kurs Java, HTML, CSS3, JavaScript Spring boot, GitHub </dd>
+
+          </dl>
+        </div>
+  </div>
 </div>
+
+<script>
+function showMoreK(){
+    //removes the link
+    var elem = document.getElementById('linkK3');
+    elem.style.display = "none";
+    //shows the #more
+    document.getElementById('more2').style.display = "block";
+
+    var show = document.getElementById('linkK4');
+    show.style.display = "block";
+}
+
+function showLessK2(){
+    var elem2 = document.getElementById('linkK4');
+    elem2.style.display = "none";
+
+    document.getElementById('more2').style.display = "none";
+
+    var show2 = document.getElementById('linkK3');
+    show2.style.display = "block";
+}
+</script>
+
+
+
+<!-- Doświadczenie -->
 
 <div class="row row-border section-personal-skills grad">
-  <div class="col-md-12">
+  <div class="col-md-1">
+  <p class="lead"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></p>
+  </div>
 
+    <div class="col-md-11">
+    <p class="lead">
+      <a href="javascript:showMoreD()" class="white" id="linkD3">Doświadczenie <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLessD2()" class="display white" id="linkD4">Doświadczenie <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+    </div>
 
-<p class="lead"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Wykształcenie</p>
 </div>
 
+<div id="more3" style="display:none;">
+    <div class="row navig">
+        <div class="col-md-12">
+          <dl class="dl-horizontal">
+            <dt>IV-V 2017</dt>
+            <dd>Stworzenie strony w PHP,HTML,CSS i  Wordpress <a class="red" href="http://physics.c0.pl/"> LINK do strony!</a> </dd>
+            <br>
+            <dt>VI-VII 2016</dt>
+<dd> Praca w Scenie kulturalnej w Jastrzębiej Górze</dd><br>
+<dt>VIII-IX 2015</dt>
+<dd>Praca w Telbridge na stanowisku konsultant.</dd><br>
+<dt>VI-IX.2014</dt>
+<dd> Praca w AmRest Sp. z o.o. w restauracji KFC jako kucharz.</dd><br>
+        <dt>VII-VIII.2013</dt>
+            <dd>Opiekun na obozie</dd>
+
+
+
+
+          </dl>
+        </div>
+  </div>
 </div>
+
+<script>
+function showMoreD(){
+    //removes the link
+    var elem = document.getElementById('linkD3');
+    elem.style.display = "none";
+    //shows the #more
+    document.getElementById('more3').style.display = "block";
+
+    var show = document.getElementById('linkD4');
+    show.style.display = "block";
+}
+
+function showLessD2(){
+    var elem2 = document.getElementById('linkD4');
+    elem2.style.display = "none";
+
+    document.getElementById('more3').style.display = "none";
+
+    var show2 = document.getElementById('linkD3');
+    show2.style.display = "block";
+}
+</script>
+
+
+<!-- Wykształcenie -->
+
 
 <div class="row row-border section-personal-skills grad">
-  <div class="col-md-12">
+  <div class="col-md-1">
+  <p class="lead"><span class="glyphicon glyphicon-education" aria-hidden="true"></p>
+  </div>
 
+    <div class="col-md-11">
+    <p class="lead">
+      <a href="javascript:showMoreW()" class="white" id="linkW3">Wykształcenie <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLessW2()" class="display white" id="linkW4">Wykształcenie <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+    </div>
 
-<p class="lead"><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> Zainteresowania</p>
 </div>
 
+<div id="more4" style="display:none;">
+    <div class="row navig">
+        <div class="col-md-12">
+          <dl class="dl-horizontal">
+            <dt>Kierunek <br>Informatyka</dt>
+            <dd>Uniwersytet Technologiczno-Humanistyczny im. Kazimierza Pułaskiego w  Radomiu. </dd>
+            <br>
+            <dt>Kierunek <br>Mat-Inf-Fiz</dt>
+             <dd>VI Liceum Ogólnokształcące im. Jana Kochanowskiego.</dd>
+
+          </dl>
+        </div>
+  </div>
 </div>
+
+<script>
+function showMoreW(){
+    //removes the link
+    var elem = document.getElementById('linkW3');
+    elem.style.display = "none";
+    //shows the #more
+    document.getElementById('more4').style.display = "block";
+
+    var show = document.getElementById('linkW4');
+    show.style.display = "block";
+}
+
+function showLessW2(){
+    var elem2 = document.getElementById('linkW4');
+    elem2.style.display = "none";
+
+    document.getElementById('more4').style.display = "none";
+
+    var show2 = document.getElementById('linkW3');
+    show2.style.display = "block";
+}
+</script>
+
+<!-- Zainteresowania -->
+
+
+
+
+ <div class="row row-border section-personal-skills grad">
+   <div class="col-md-1">
+   <p class="lead"><span class="glyphicon  glyphicon-sunglasses" aria-hidden="true"></p>
+   </div>
+
+     <div class="col-md-11">
+     <p class="lead">
+       <a href="javascript:showMoreZ()" class="white" id="linkZ3">Zainteresowania <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+       <a href="javascript:showLessZ2()" class="display white" id="linkZ4">Zainteresowania <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+     </div>
+
+ </div>
+
+ <div id="more5" style="display:none;">
+     <div class="row navig">
+         <div class="col-md-12">
+           <dl class="dl-horizontal">
+             <dt>AkademiaKodu <br>Lipiec 2017</dt>
+             <dd>Kurs Java, HTML, Spring itd</dd>
+
+           </dl>
+         </div>
+   </div>
+ </div>
+
+ <script>
+ function showMoreZ(){
+     //removes the link
+     var elem = document.getElementById('linkZ3');
+     elem.style.display = "none";
+     //shows the #more
+     document.getElementById('more5').style.display = "block";
+
+     var show = document.getElementById('linkZ4');
+     show.style.display = "block";
+ }
+
+ function showLessZ2(){
+     var elem2 = document.getElementById('linkZ4');
+     elem2.style.display = "none";
+
+     document.getElementById('more5').style.display = "none";
+
+     var show2 = document.getElementById('linkZ3');
+     show2.style.display = "block";
+ }
+ </script>
+
+<!-- Atrybuty inajomość języków -->
+
+
 
 <div class="row row-border section-personal-skills grad">
-  <div class="col-md-6">
+  <div class="col-md-1">
+  <p class="lead"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></p>
+  </div>
 
-<p class="lead"><span class="glyphicon glyphicon-asterisk" aria-hidden="true"></span> Atrybuty</p>
+    <div class="col-md-5">
+    <p class="lead">
+      <a href="javascript:showMoreA()" class="white" id="linkA3">Atrybuty <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLessA2()" class="display white" id="linkA4">Atrybuty <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+    </div>
+
+    <div class="col-md-1">
+    <p class="lead"><span class="glyphicon glyphicon-globe" aria-hidden="true"></p>
+    </div>
+
+      <div class="col-md-5">
+      <p class="lead">
+        <a href="javascript:showMoreJ()" class="white" id="linkJ3"> Znajomość języków <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+        <a href="javascript:showLessJ2()" class="display white" id="linkJ4"> Znajomość języków <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+      </div>
+
+
+
 </div>
-  <div class="col-md-6">
-<p class="lead"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Znajomość języków</p>
-</div>
+
+
+      <div class="row navig">
+        <div id="more6" style="display:none;">
+          <div class="col-md-4">
+            <ul style="list-style: square listHidden">
+                          <li>HTML</li>
+                        <li>CSS3</li>
+                          <li>Bootstrap</li>
+                        <li>PHP</li>
+                        <li>C/C++</li>
+                        <li>Delphi7</li>
+                        <li>MySql/SqLite</li>
+                        <li>Java</li>
+                        <li>JavaScript</li>
+                        <li>Swing</li>
+                        <li>JavaFX</li>
+                        <li>Spring boot</li>
+              </ul>
+        </div>
+      </div>
+
+<div id="more7" style="display:none;">
+        <div class=".col-md-4 pull-right">
+          <ul style="list-style: square listHidden">
+                        <li>Prawo jazdy od 2013 kat. B</li>
+                        <li>Certyfikat ukończenia kursu „ Absolwencki starter”</li>
+                        <li>Certyfikat zaawansowanego projektowania- <br>modelowania graficznego 3D w programie AutoCad.</li>
+                        <li>Ukończenie kursu Wordpress, HTML i CSS</li>
+                        <li>Ukończenie kursu PHP</li>
+            </ul>
+        </div>
+  </div>
+
+
 
 </div>
 
 
+<script>
+function showMoreA(){
+    //removes the link
+    var elem = document.getElementById('linkA3');
+    elem.style.display = "none";
+    //shows the #more
+    document.getElementById('more6').style.display = "block";
+
+    var show = document.getElementById('linkA4');
+    show.style.display = "block";
+}
+
+function showLessA2(){
+    var elem2 = document.getElementById('linkA4');
+    elem2.style.display = "none";
+
+    document.getElementById('more6').style.display = "none";
+
+    var show2 = document.getElementById('linkA3');
+    show2.style.display = "block";
+}
+</script>
+
+<script>
+function showMoreJ(){
+    //removes the link
+    var elem = document.getElementById('linkJ3');
+    elem.style.display = "none";
+    //shows the #more
+    document.getElementById('more7').style.display = "block";
+
+    var show = document.getElementById('linkJ4');
+    show.style.display = "block";
+}
+
+function showLessJ2(){
+    var elem2 = document.getElementById('linkJ4');
+    elem2.style.display = "none";
+
+    document.getElementById('more7').style.display = "none";
+
+    var show2 = document.getElementById('linkJ3');
+    show2.style.display = "block";
+}
+</script>
 
 
 
@@ -227,9 +544,6 @@ function showLess(){
 
 
 
-
-
-</div>
 
 
 
@@ -248,17 +562,17 @@ function showLess(){
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-  <div class="col-md-12 slider">
-  <footer class="fcolor" >
-  &copy 2017. Jakub Dąbrowski. Hiper stronka
-  </footer>
 
-  </div>
-
+  <div class="row">
+    <div class="col-md-12">
+      <p class="lead">„Wyrażam zgodę na przetwarzanie danych osobowych zawartych w aplikacji dla potrzeb procesu rekrutacji zgodnie z ustawą z dnia 29.08.1997 r. o Ochronie Danych Osobowych, tekst jednolity: Dz. U. z 2002 r., Nr 101, poz. 926 z późniejszymi zmianami.”</p>
+        <p class="lead author">&copy 30.07.2017.Autor Jakub Dąbrowski</p>
+        </div>
+    </div>
   </div>
 
     </div>
 
-
+</div>
 </body>
 </html>
