@@ -39,12 +39,15 @@ color: white;
 .my-photo{
 
   position: absolute;
-  bottom: -144px;
-  width: 130px;
-  height: 160px;
+  bottom: -172px;
+  width: 160px;
+  height: 197px;
   border: solid 1px #000;
 
 }
+
+
+
 }
 .my-photo:hover >img{
   content: url('aaa.jpg');
@@ -101,4 +104,10 @@ a:hover{
 }
 .langu{
   text-align: right;
+}
+.me{
+  font-size: 15px;
+}
+.progress-bar {
+  background-color: red;
 }
