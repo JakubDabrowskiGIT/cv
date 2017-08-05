@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-<title> JAKUB DĄBROWSKI </title>
+<title href="javascript:showTitle()"> JAKUB DĄBROWSKI </title>
 <meta charset="UTF-8">
 <meta name="author" content="Jakub Dąbrowski">
 <meta name="desciption" content="super kozak strona">
@@ -15,6 +15,13 @@
 
 </head>
 <body>
+
+<script>
+window.onblur = function showTitle() { document.title = 'Czemu poszedłeś?'; }
+
+window.onfocus = function () { document.title = 'Wróciłeś :D'; }
+</script>
+
 
 <div class="container">
 <div class="row row-border section-name col">
