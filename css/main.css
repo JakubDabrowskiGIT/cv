@@ -45,10 +45,10 @@ color: white;
   border: solid 1px #000;
 
 }
-
-
-
 }
+
+
+
 .my-photo:hover >img{
   content: url('aaa.jpg');
   background: url('aaa.jpg');
