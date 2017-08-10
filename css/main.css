@@ -1,6 +1,9 @@
 body{
-  background-color: #87B7E8;
+  /*background-color: rgb(68, 68, 68);*/
+  background-color: #272727;
   color: black;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 .navig{
   margin-top: 10px;
@@ -23,7 +26,7 @@ body{
 }
 .section-name{
 color: white;
-  background: linear-gradient(141deg, black 20%, #1fc8db 51%, #373296 80%);
+  background: linear-gradient(141deg, #200122 50%, #6f0000 80%);
 
 }
 .section-name h3{
@@ -68,7 +71,7 @@ margin-top: 20px;
   background-color: grey !important;
 }
 a{
-  color: black;
+  color: white;
 }
 a:hover{
   color: black;
@@ -78,11 +81,11 @@ a:hover{
   color: red;
 }
 .grad {
-    background: #203f72; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(#203f72, black); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#203f72, black); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#203f72, black); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#203f72, black); /* Standard syntax */
+    background: #E33B3B; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#2193F6, black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#2193F6, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#2193F6, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#2193F6, black); /* Standard syntax */
     color: white;
 }
 .italic{
