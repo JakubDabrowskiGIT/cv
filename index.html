@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/main.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -99,38 +100,31 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
 </div>
 
 <div id="more" style="display:block;">
-    <div class="row navig">
-<div class="col-md-12">
+  <div class="row navig">
+      <div class="col-md-12">
+        <ul style="list-style: square listHidden">
 <li>Znajomość HTML, CSS3, Bootstrap</li>
-</div>
-<div class="col-md-12">
+
 <li>JavaScript (Tworzenie podstawowych skryptów)</li>
-</div>
-<div class="col-md-12">
+
 <li>Znajomość JAVA (Wzorce projektowe: DAO, MVC, JavaFX, interfejsy, kolekcje, wyliczenia, polimorfizm, OOP)</li>
-</div>
-<div class="col-md-12">
+
 <li>MySQL/SQLite</li>
-</div>
-<div class="col-md-12">
+
 <li>Swing</li>
-</div>
-<div class="col-md-12">
+
 <li>Podstawy Spring (xml, SpringBoot, Thymeleaf, adnotacje, json)</li>
-</div>
-<div class="col-md-12">
+
 <li>JavaFX</li>
-</div>
-<div class="col-md-12">
+
 <li>Znajomość Maven</li>
-</div>
-<div class="col-md-12"><li>Znajomość Git</li>
-</div>
-<div class="col-md-12">
+
+  <li>Znajomość Git</li>
+
 <li>Znajomość InteliJ IDEA, AutoCAD, Photoshop CS6</li>
-</div>
-<div class="col-md-12">
+
 <li>C/C++</li>
+</ul>
 </div>
 </div>
 </div>
@@ -142,6 +136,7 @@ function showMore(){
     var elem = document.getElementById('link');
     elem.style.display = "none";
     //shows the #more
+    $("#more").slideToggle("slow");
     document.getElementById('more').style.display = "block";
 
     var show = document.getElementById('link2');
@@ -152,12 +147,26 @@ function showLess(){
     var elem2 = document.getElementById('link2');
     elem2.style.display = "none";
 
-    document.getElementById('more').style.display = "none";
+
+    // document.getElementById('more').style.display = "none";
+    $("#more").slideToggle("slow");
 
     var show2 = document.getElementById('link');
     show2.style.display = "block";
 }
 </script>
+
+
+<!-- <script>
+$(document).ready(function(){
+    $("#link2").click(function(){
+      $("#link2").style.display("none");
+      $("#link").style.display("block");
+        $("#more").slideToggle("slow");
+    });
+});
+</script> -->
+
 
 
 
@@ -206,6 +215,7 @@ function showMore1(){
     var elem = document.getElementById('link3');
     elem.style.display = "none";
     //shows the #more
+    $("#more1").slideToggle("slow");
     document.getElementById('more1').style.display = "block";
 
     var show = document.getElementById('link4');
@@ -216,7 +226,8 @@ function showLess2(){
     var elem = document.getElementById('link4');
     elem.style.display = "none";
 
-    document.getElementById('more1').style.display = "none";
+    // document.getElementById('more1').style.display = "none";
+    $("#more1").slideToggle("slow");
 
     var show2 = document.getElementById('link3');
     show2.style.display = "block";
@@ -268,6 +279,7 @@ function showMoreK(){
     var elem = document.getElementById('linkK3');
     elem.style.display = "none";
     //shows the #more
+      $("#more2").slideToggle("slow");
     document.getElementById('more2').style.display = "block";
 
     var show = document.getElementById('linkK4');
@@ -278,7 +290,8 @@ function showLessK2(){
     var elem2 = document.getElementById('linkK4');
     elem2.style.display = "none";
 
-    document.getElementById('more2').style.display = "none";
+    // document.getElementById('more2').style.display = "none";
+      $("#more2").slideToggle("slow");
 
     var show2 = document.getElementById('linkK3');
     show2.style.display = "block";
@@ -325,6 +338,7 @@ function showMoreD(){
     var elem = document.getElementById('linkD3');
     elem.style.display = "none";
     //shows the #more
+        $("#more3").slideToggle("slow");
     document.getElementById('more3').style.display = "block";
 
     var show = document.getElementById('linkD4');
@@ -335,7 +349,8 @@ function showLessD2(){
     var elem2 = document.getElementById('linkD4');
     elem2.style.display = "none";
 
-    document.getElementById('more3').style.display = "none";
+    // document.getElementById('more3').style.display = "none";
+        $("#more3").slideToggle("slow");
 
     var show2 = document.getElementById('linkD3');
     show2.style.display = "block";
@@ -379,6 +394,7 @@ function showMoreW(){
     var elem = document.getElementById('linkW3');
     elem.style.display = "none";
     //shows the #more
+        $("#more4").slideToggle("slow");
     document.getElementById('more4').style.display = "block";
 
     var show = document.getElementById('linkW4');
@@ -389,7 +405,8 @@ function showLessW2(){
     var elem2 = document.getElementById('linkW4');
     elem2.style.display = "none";
 
-    document.getElementById('more4').style.display = "none";
+    // document.getElementById('more4').style.display = "none";
+        $("#more4").slideToggle("slow");
 
     var show2 = document.getElementById('linkW3');
     show2.style.display = "block";
@@ -437,6 +454,7 @@ function showMoreJ(){
     var elem = document.getElementById('linkJ3');
     elem.style.display = "none";
     //shows the #more
+        $("#more6").slideToggle("slow");
     document.getElementById('more6').style.display = "block";
 
     var show = document.getElementById('linkJ4');
@@ -447,8 +465,8 @@ function showLessJ2(){
     var elem2 = document.getElementById('linkJ4');
     elem2.style.display = "none";
 
-    document.getElementById('more6').style.display = "none";
-
+    // document.getElementById('more6').style.display = "none";
+    $("#more6").slideToggle("slow");
     var show2 = document.getElementById('linkJ3');
     show2.style.display = "block";
 }
@@ -510,6 +528,7 @@ function showLessJ2(){
      var elem = document.getElementById('linkZ3');
      elem.style.display = "none";
      //shows the #more
+         $("#more5").slideToggle("slow");
      document.getElementById('more5').style.display = "block";
 
      var show = document.getElementById('linkZ4');
@@ -520,7 +539,8 @@ function showLessJ2(){
      var elem2 = document.getElementById('linkZ4');
      elem2.style.display = "none";
 
-     document.getElementById('more5').style.display = "none";
+    //  document.getElementById('more5').style.display = "none";
+        $("#more5").slideToggle("slow");
 
      var show2 = document.getElementById('linkZ3');
      show2.style.display = "block";
