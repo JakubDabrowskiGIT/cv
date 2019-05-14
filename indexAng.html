@@ -69,18 +69,18 @@
   <li class="italic">Mobile number:</li>
   <li class="italic">E-mail:</li>
   <li class="italic">GitHub:</li>
-  <li class="italic">Objective:</li>
+  <li class="italic">Position:</li>
 
 </ul>
   </div>
   <div class="col-md-7">
     <ul>
-      <li><strong>Warszawa</strong></li>
+      <li><strong>Warsaw</strong></li>
       <li><strong>21.09.1995</strong></li>
       <li><strong><a href="tel:531678882">531678882</a></strong></li>
       <li><strong><a href="mailto:crimson.kuba@gmail.com">crimson.kuba@gmail.com</a></strong></li>
       <li><strong><a href="https://github.com/JakubDabrowskiGIT" target="_blank">Link GitHub</a></strong></li>
-      <li><strong>Junior JavaEE Developer in Syndatis</strong></li>
+      <li><strong>Java Developer</strong></li>
 
     </ul>
   </div>
@@ -91,6 +91,59 @@
   </div>
 </div>
 
+<!-- Doświadczenie -->
+
+<div class="row row-border section-personal-skills grad">
+  <div class="col-md-1">
+  <p class="lead"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></p>
+  </div>
+
+    <div class="col-md-11">
+    <p class="lead">
+      <a href="javascript:showMoreD()" class="white" id="linkD3">Experience <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLessD2()" class="display white" id="linkD4">Experience <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+    </div>
+
+</div>
+
+<div id="more3" style="display:block;">
+    <div class="row navig">
+        <div class="col-md-12">
+          <dl class="dl-horizontal">
+			<dt>IV 2018 </dt>
+			<dd>Java Developer in Syndatis</dd><br>
+            <dt>IX 2017 - III 2018</dt>
+			<dd>Junior Java Developer in Syndatis</dd><br>
+            <dt>IV 2017 - VI 2017</dt>
+            <dd>Creating page in PHP, HTML, CSS and Wordpress</dd>
+          </dl>
+        </div>
+  </div>
+</div>
+
+<script>
+function showMoreD(){
+    //removes the link
+    var elem = document.getElementById('linkD3');
+    elem.style.display = "none";
+    //shows the #more
+        $("#more3").slideToggle("slow");
+    document.getElementById('more3').style.display = "block";
+
+    var show = document.getElementById('linkD4');
+    show.style.display = "block";
+}
+
+function showLessD2(){
+    var elem2 = document.getElementById('linkD4');
+    elem2.style.display = "none";
+
+    // document.getElementById('more3').style.display = "none";
+        $("#more3").slideToggle("slow");
+    var show2 = document.getElementById('linkD3');
+    show2.style.display = "block";
+}
+</script>
 
 
 <div class="row row-border section-personal-skills grad">
@@ -111,33 +164,28 @@
       <div class="col-md-12">
         <ul style="list-style: square listHidden">
           
-          <li>Spring</li>
+<li>Spring</li>        
 
-          <li>JAVA EE, JAVA 8</li>
+<li>Java</li>
 
-          <li>Maven, Gradle, Ant</li>
+<li>SQL</li>
 
-          <li>MySQL, SQLite, MS SQL</li>
+<li>Hibernate, JDBC</li>
 
-          <li>Hibernate, JDBC</li>
+<li>Git</li>
 
-          <li>C/C++</li>
+<li>Tomcat</li>
 
-          <li>Git</li>
+<li>JSON, XML</li>
 
-          <li>Tomcat</li>
+<li>JavaScript, jQuery</li>
 
-          <li>JSON, XML</li>
+<li>Vaadin</li>
 
-          <li>HTML5, CSS3, Bootstrap4</li>
+<li>HTML, CSS, Bootstrap</li>
 
-          <li>JavaScript</li>
+<li>WordPress</li>
 
-          <li>JavaFX, Swing</li>
-
-          <li>Vaadin 8</li>
-
-          <li>Windows, Linux, macOS</li>
 </ul>
 </div>
 
@@ -189,21 +237,19 @@ function showLess(){
 <div id="more1" style="display:block;">
     <div class="row navig">
         <div class="col-md-12">
-          <dl class="dl-horizontal dl-list">
-            <dt>Application Kwejk</dt>
-            <dd>Application that displays gifs, you can also search for more gifs, it displays categories and one gif on a page. You can find application on server <a href="https://memgifthebest.herokuapp.com" target="_blank" class="red">Link!</a></dd>
-          <dt>MyWeather</dt>
-          <dd>Application to displaying weather, viz. temperature, pressure, cloudiness, humidity with correcting literal error when typing city name, it supports polish language and works with every city.</dd><br>
+          <dl class="dl-horizontal dl-list">		  
+		  <dt>Weather App</dt>
+          <dd>The meteorological service application works on the Android mobile system - Engineering work. Application for displaying the weather, temperature, pressure, humidity and wind. Data is retrieved from the OpenWeatherMap API.</dd><br>
+          <dt>Website with gifs</dt>
+          <dd>Website which displays gifs, you can also search for more gifs, it displays categories and one gif on a page. You can find website on server <a href="https://memgifthebest.herokuapp.com" target="_blank" class="red">Link!</a></dd>
           <dt>Who Wants to <br>Be a Millionaire?</dt>
           <dd>Application displays questions and shows total points (one point-one right answer)</dd><br>
           <dt>Website in<br> Bootstrap</dt>
           <dd>Style "onesite" page made in Bootstrap 3.7 framework  <a href="https://jakubdabrowskigit.github.io/bootstrapwebsite" target="_blank" class="red">Link</a></dd>
           <dt>Tic tac toe</dt>
           <dd>Simple game for two people using Swing, showing prompt, when one of the players win </dd><br>
-          <dt>Apothegm</dt>
-          <dd>Application draw lots and displays apothegms, you can add your own apothegms. They don't repeat.
-
-
+          <dt>Sentences</dt>
+          <dd>Application draws and displays sentences, you can add your own sentence. They don't repeat.
           </dl>
         </div>
   </div>
@@ -298,59 +344,6 @@ function showLessK2(){
 
 
 
-<!-- Doświadczenie -->
-
-<div class="row row-border section-personal-skills grad">
-  <div class="col-md-1">
-  <p class="lead"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></p>
-  </div>
-
-    <div class="col-md-11">
-    <p class="lead">
-      <a href="javascript:showMoreD()" class="white" id="linkD3">Experience <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
-      <a href="javascript:showLessD2()" class="display white" id="linkD4">Experience <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
-    </div>
-
-</div>
-
-<div id="more3" style="display:none;">
-    <div class="row navig">
-        <div class="col-md-12">
-          <dl class="dl-horizontal">
-            <dt>IX 2017 - currently</dt>
-<dd>Junior JavaEE Developer in Syndatis - Full-time job</dd><br>
-            <dt>IV 2017 - VI 2017</dt>
-            <dd>Creating pag in PHP, HTML, CSS and Wordpress <a class="red" href="http://physics.c0.pl/" target="_blank"> LINK!</a> </dd>
-            <br>
-
-          </dl>
-        </div>
-  </div>
-</div>
-
-<script>
-function showMoreD(){
-    //removes the link
-    var elem = document.getElementById('linkD3');
-    elem.style.display = "none";
-    //shows the #more
-        $("#more3").slideToggle("slow");
-    document.getElementById('more3').style.display = "block";
-
-    var show = document.getElementById('linkD4');
-    show.style.display = "block";
-}
-
-function showLessD2(){
-    var elem2 = document.getElementById('linkD4');
-    elem2.style.display = "none";
-
-    // document.getElementById('more3').style.display = "none";
-        $("#more3").slideToggle("slow");
-    var show2 = document.getElementById('linkD3');
-    show2.style.display = "block";
-}
-</script>
 
 
 <!-- Wykształcenie -->

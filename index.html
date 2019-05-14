@@ -44,10 +44,8 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
   <p class="lead"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></p>
 </div>
 
-  <div class="col-md-11">
-
-
-<p class="lead"> Dane personalne</p>
+<div class="col-md-11">
+	<p class="lead"> Dane personalne</p>
 </div>
 
 </div>
@@ -62,7 +60,7 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
   <li class="italic">Numer telefonu:</li>
   <li class="italic">Adres e-mail:</li>
   <li class="italic">GitHub:</li>
-  <li class="italic">Pozycja:</li>
+  <li class="italic">Stanowisko:</li>
 
 </ul>
   </div>
@@ -73,7 +71,7 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
       <li><strong><a href="tel:531678882">531678882</a></strong></li>
       <li><strong><a href="mailto:crimson.kuba@gmail.com">crimson.kuba@gmail.com</a></strong></li>
       <li><strong><a href="https://github.com/JakubDabrowskiGIT" target="_blank">Link GitHub</a></strong></li>
-      <li><strong>Junior JavaEE Developer w Syndatis</strong></li>
+      <li><strong>Java Developer</strong></li>
 
     </ul>
   </div>
@@ -83,6 +81,63 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
 
   </div>
 </div>
+
+
+
+<!-- Doświadczenie -->
+
+<div class="row row-border section-personal-skills grad">
+  <div class="col-md-1">
+  <p class="lead"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></p>
+  </div>
+
+    <div class="col-md-11">
+    <p class="lead">
+      <a href="javascript:showMoreD()" class="white" id="linkD3">Doświadczenie <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+      <a href="javascript:showLessD2()" class="display white" id="linkD4">Doświadczenie <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+    </div>
+
+</div>
+
+<div id="more3" style="display:block;">
+    <div class="row navig">
+        <div class="col-md-12">
+          <dl class="dl-horizontal">
+		    <dt>IV 2018</dt>
+			<dd>Java Developer w Syndatis</dd><br>
+            <dt>IX 2017 - III 2018</dt>
+			<dd>Junior Java Developer w Syndatis</dd><br>
+            <dt>IV 2017 - VI 2017</dt>
+            <dd>Stworzenie strony w PHP,HTML,CSS i Wordpress jako Freelancer</dd>
+          </dl>
+        </div>
+  </div>
+</div>
+
+<script>
+function showMoreD(){
+    //removes the link
+    var elem = document.getElementById('linkD3');
+    elem.style.display = "none";
+    //shows the #more
+        $("#more3").slideToggle("slow");
+    document.getElementById('more3').style.display = "block";
+
+    var show = document.getElementById('linkD4');
+    show.style.display = "block";
+}
+
+function showLessD2(){
+    var elem2 = document.getElementById('linkD4');
+    elem2.style.display = "none";
+
+    // document.getElementById('more3').style.display = "none";
+        $("#more3").slideToggle("slow");
+
+    var show2 = document.getElementById('linkD3');
+    show2.style.display = "block";
+}
+</script>
 
 
 
@@ -106,15 +161,11 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
 
 <li>Spring</li>        
 
-<li>JAVA EE, JAVA 8</li>
+<li>Java</li>
 
-<li>Maven, Gradle, Ant</li>
-
-<li>MySQL, SQLite, MS SQL</li>
+<li>SQL</li>
 
 <li>Hibernate, JDBC</li>
-
-<li>C/C++</li>
 
 <li>Git</li>
 
@@ -122,15 +173,13 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
 
 <li>JSON, XML</li>
 
-<li>HTML5, CSS3, Bootstrap4</li>
+<li>JavaScript, jQuery</li>
 
-<li>JavaScript</li>
+<li>Vaadin</li>
 
-<li>JavaFX, Swing</li>
+<li>HTML, CSS, Bootstrap</li>
 
-<li>Vaadin 8</li>
-
-<li>Windows, Linux, macOS</li>
+<li>WordPress</li>
 
 </ul>
 </div>
@@ -197,21 +246,18 @@ $(document).ready(function(){
     <div class="row navig">
         <div class="col-md-12">
           <dl class="dl-horizontal dl-list">
-            <dt>Aplikacja Kwejk</dt>
-            <dd>Aplikacja wyświetla gify, jest możliwość wyszukania gifów, wyświetlenia kategorii, wyświetlenia pojedynczego gifa. Aplikacja jest zintegrowana
-              z Facebookiem. Aplikacja posiada JSONA Aplikacja jest postawiona na serwerze <a class="red" target="_blank" href="https://memgifthebest.herokuapp.com/">Link</a></dd><br>
-            <dt>MyWeather</dt>
-              <dd>Aplikacja do wyświetlania pogody, czyli temperatury, ciśnienia, zachmurzenia, wilgotności, z obsługą literówek przy wpisaniu nazwy miasta
-                i polskiego języka oraz obsługującą każde miasto. Dane pobiera z serwisu
-                Open Weather.</dd><br>
+		    <dt>Weather App</dt>
+            <dd>Aplikacja serwisu meteorologicznego działajej na systemie mobilnym Androida - Praca inżynierska. Aplikacja do wyświetlania pogody, dokładnie temperatury, ciśnienia, wilgotności oraz wiatru. Dane są pobierane z API OpenWeatherMap.</dd><br>
+            <dt>Strona z gifami</dt>
+            <dd>Strona wyświetlająca gify, jest możliwość wyszukania gifów, wyświetlenia kategorii, wyświetlenia pojedynczego gifa. Aplikacja jest postawiona na serwerze. <a class="red" target="_blank" href="https://memgifthebest.herokuapp.com/">Link</a></dd><br>         
             <dt>Milionerzy</dt>
             <dd>Aplikacja wyświetla pytania i pod koniec pokazuje wynik, czyli sumę poprawnych odpowiedzi</dd><br>
-              <dt>Kółko i krzyżyk</dt>
-              <dd> Prosta gra dla dwojga osób przy użyciu swinga, pokazująca komunikat kiedy jeden z graczy wygra </dd><br>
-              <dt>Strona w <br>Bootstrapie</dt>
-              <dd>Stronka typy „onesite" wykonana w frameworku Bootstrap 3.7  <a class="red" target="_blank" href="https://jakubdabrowskigit.github.io/bootstrapwebsite/">Link</a></dd>
-              <dt>Sentences</dt>
-              <dd>Aplikacja losuje i wyświetla sentencje, można dodawać własne sentencje. Sentencje nie powtarzają się</dd>
+            <dt>Kółko i krzyżyk</dt>
+            <dd>Prosta gra dla dwojga osób przy użyciu swinga, pokazująca komunikat kiedy jeden z graczy wygra </dd><br>
+            <dt>Strona w <br>Bootstrapie</dt>
+            <dd>Stronka typy „onesite" wykonana w frameworku Bootstrap 3.7  <a class="red" target="_blank" href="https://jakubdabrowskigit.github.io/bootstrapwebsite/">Link</a></dd>
+            <dt>Sentences</dt>
+            <dd>Aplikacja losuje i wyświetla sentencje, można dodawać własne sentencje. Sentencje nie powtarzają się</dd>
           </dl>
         </div>
   </div>
@@ -308,59 +354,6 @@ function showLessK2(){
 
 
 
-<!-- Doświadczenie -->
-
-<div class="row row-border section-personal-skills grad">
-  <div class="col-md-1">
-  <p class="lead"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></p>
-  </div>
-
-    <div class="col-md-11">
-    <p class="lead">
-      <a href="javascript:showMoreD()" class="white" id="linkD3">Doświadczenie <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
-      <a href="javascript:showLessD2()" class="display white" id="linkD4">Doświadczenie <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
-    </div>
-
-</div>
-
-<div id="more3" style="display:none;">
-    <div class="row navig">
-        <div class="col-md-12">
-          <dl class="dl-horizontal">
-            <dt>IX 2017 - aktualnie</dt>
-<dd>Junior JavaEE Developer w Syndatis - pełen etat</dd><br>
-            <dt>IV 2017 - VI 2017</dt>
-            <dd>Stworzenie strony w PHP,HTML,CSS i Wordpress jako Freelancer<a class="red" href="http://physics.c0.pl/" target="_blank"> LINK do strony!</a> </dd>
-            <br>
-          </dl>
-        </div>
-  </div>
-</div>
-
-<script>
-function showMoreD(){
-    //removes the link
-    var elem = document.getElementById('linkD3');
-    elem.style.display = "none";
-    //shows the #more
-        $("#more3").slideToggle("slow");
-    document.getElementById('more3').style.display = "block";
-
-    var show = document.getElementById('linkD4');
-    show.style.display = "block";
-}
-
-function showLessD2(){
-    var elem2 = document.getElementById('linkD4');
-    elem2.style.display = "none";
-
-    // document.getElementById('more3').style.display = "none";
-        $("#more3").slideToggle("slow");
-
-    var show2 = document.getElementById('linkD3');
-    show2.style.display = "block";
-}
-</script>
 
 
 <!-- Wykształcenie -->
