@@ -39,18 +39,20 @@ color: white;
   margin-top: 10px;
 }
 @media screen and (min-width: 1000px) {
+	
 .my-photo{
 
-  position: absolute;
-  bottom: -175px;
-  width: 160px;
-  height: 197px;
+  height: 155px;
   border: solid 1px #000;
-
-}
 }
 
+.my-photo:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
 
+}
 
 .my-photo:hover >img{
   content: url('aaa.jpg');

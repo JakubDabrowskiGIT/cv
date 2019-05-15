@@ -50,8 +50,6 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
 
 </div>
 
-
-
 <div class="row navig">
   <div class="col-md-2">
 <ul>
@@ -103,7 +101,7 @@ window.onfocus = function () { document.title = 'Jesteś :D'; }
     <div class="row navig">
         <div class="col-md-12">
           <dl class="dl-horizontal">
-		    <dt>IV 2018</dt>
+		    <dt>IV 2018 - obecnie</dt>
 			<dd>Java Developer w Syndatis</dd><br>
             <dt>IX 2017 - III 2018</dt>
 			<dd>Junior Java Developer w Syndatis</dd><br>
@@ -407,11 +405,7 @@ function showLessW2(){
 }
 </script>
 
-
-
-<!-- Atrybuty-->
-
-
+<!-- Kompetencje społeczne -->
 
 <div class="row row-border section-personal-skills grad">
     <div class="col-md-1">
@@ -419,21 +413,18 @@ function showLessW2(){
     </div>
       <div class="col-md-11">
       <p class="lead">
-        <a href="javascript:showMoreJ()" class="white" id="linkJ3"> Atrybuty <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
-        <a href="javascript:showLessJ2()" class="display white" id="linkJ4"> Atrybuty <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
-
-
+        <a href="javascript:showMoreJ()" class="white" id="linkJ3"> Kompetencje społeczne <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+        <a href="javascript:showLessJ2()" class="display white" id="linkJ4"> Kompetencje społeczne <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
 </div>
 </div>
       <div id="more6" style="display:none;">
       <div class="row navig">
           <div class="col-md-12">
             <ul style="list-style: square listHidden">
-              <li>Posługiwanie się językiem angielskim(B2).</li>
-              <li>Certyfikat ukończenia kursu Callan Method.</li>
-              <li>Certyfikat zaawansowanego projektowania- modelowania graficznego 3D w programie AutoCad.</li>
-              <li>Szybkie uczenie się</li>
-              <li>Samodyscyplina</li>
+			  <li>Zarządzanie zespołem</li>
+			  <li>Umiejętność pracy w zespole</li>
+			  <li>Komunikatowyność</li>
+			  <li>Odpowiedzialność</li>
               <li>Kreatywność</li>
               <li>Dokładność</li>
               </ul>
@@ -466,14 +457,63 @@ function showLessJ2(){
 }
 </script>
 
+
+<!-- Umiejętności i Kompetencje techniczne -->
+
+<div class="row row-border section-personal-skills grad">
+    <div class="col-md-1">
+    <p class="lead"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></p>
+    </div>
+      <div class="col-md-11">
+      <p class="lead">
+        <a href="javascript:showMoreKS()" class="white" id="linkKS3"> Umiejętności i Kompetencje techniczne  <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
+        <a href="javascript:showLessKS2()" class="display white" id="linkKS4"> Umiejętności i Kompetencje techniczne  <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></a></p>
+</div>
+</div>
+      <div id="moreKS6" style="display:none;">
+      <div class="row navig">
+          <div class="col-md-12">
+            <ul style="list-style: square listHidden">
+			  <li>Swobodna praca z różnymi technologiami</li>
+			  <li>Prawo jazdy kategorii B</li>
+              <li>Posługiwanie się językiem angielskim(B2)</li>
+              <li>Certyfikat ukończenia kursu Callan Method</li>
+              <li>Certyfikat zaawansowanego projektowania - modelowania graficznego 3D w programie AutoCad</li>
+              </ul>
+        </div>
+      </div>
+
+</div>
+
+<script>
+function showMoreKS(){
+    //removes the link
+    var elem = document.getElementById('linkKS3');
+    elem.style.display = "none";
+    //shows the #more
+        $("#moreKS6").slideToggle("slow");
+    document.getElementById('moreKS6').style.display = "block";
+
+    var show = document.getElementById('linkKS4');
+    show.style.display = "block";
+}
+
+function showLessKS2(){
+    var elem2 = document.getElementById('linkKS4');
+    elem2.style.display = "none";
+
+    // document.getElementById('more6').style.display = "none";
+    $("#moreKS6").slideToggle("slow");
+    var show2 = document.getElementById('linkKS3');
+    show2.style.display = "block";
+}
+</script>
+
 <!-- Zainteresowania -->
-
-
-
 
  <div class="row row-border section-personal-skills grad">
    <div class="col-md-1">
-   <p class="lead"><span class="glyphicon  glyphicon-sunglasses" aria-hidden="true"></p>
+   <p class="lead"><span class="glyphicon glyphicon-knight" aria-hidden="true"></p>
    </div>
 
      <div class="col-md-11">
@@ -488,28 +528,28 @@ function showLessJ2(){
      <div class="row navig">
          <div class="col-md-2">
            <i class="fa fa-fighter-jet fa-3x icon" aria-hidden="true"></i><br>
-          <p class="lead me">Podróże (zwłaszcza ciepłe kraje np. Włochy)</p>
+          <p class="lead me">Podróże</p>
          </div>
          <div class="col-md-2">
         <i class="fa fa-futbol-o fa-3x icon" aria-hidden="true"></i><br>
-        <p class="lead me">Bieganie, rowery, piłka nożna</p>
+        <p class="lead me">Sport</p>
 
 </div>
 <div class="col-md-2">
         <i class="fa fa-car fa-3x icon" aria-hidden="true"></i><br>
-        <p class="lead me">Sportowe samochody</p>
+        <p class="lead me">Super samochody</p>
       </div>
       <div class="col-md-2">
         <i class="fa fa-handshake-o fa-3x icon" aria-hidden="true"></i><br>
-        <p class="lead me">Spędzanie czasu w grupie (grille, imprezy okolicznościowe)</p>
+        <p class="lead me">Spędzanie czasu w grupie</p>
       </div>
       <div class="col-md-2">
         <i class="fa fa-gamepad fa-3x icon" aria-hidden="true"></i><br>
-        <p class="lead me">Gry komputerowe typu RPG, FPS</p>
+        <p class="lead me">Gry komputerowe</p>
       </div>
       <div class="col-md-2">
         <i class="fa fa-video-camera fa-3x icon" aria-hidden="true"></i><br>
-        <p class="lead me">Filmy (komediowe, akcji)</p>
+        <p class="lead me">Filmy</p>
 
       </div>
 
@@ -544,8 +584,8 @@ function showLessJ2(){
   <script src="js/bootstrap.min.js" type="text/javascript"></script>
   <div class="row">
     <div class="col-md-12">
-      <p class="lead italic footer">„Wyrażam zgodę na przetwarzanie danych osobowych zawartych w aplikacji dla potrzeb procesu rekrutacji zgodnie z ustawą z dnia 29.08.1997 r. o Ochronie Danych Osobowych, tekst jednolity: Dz. U. z 2002 r., Nr 101, poz. 926 z późniejszymi zmianami.”</p>
-        <p class="lead author">&copy 30.07.2017.Autor Jakub Dąbrowski</p>
+      <p class="lead italic footer">„Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO)).”</p>
+        <p class="lead author">&copy Jakub Dąbrowski</p>
         </div>
     </div>
   </div>
